@@ -1,19 +1,19 @@
 <template>
   <div>
-    <div class="header">
+    <div class="flex flex-wrap items-center justify-between">
       <h1>
         <span style="font-weight: 900;">nelson.</span>
         <span style="font-weight: 300;">wien</span>
       </h1>
 
       <nav>
-        <router-link to="/work">
+        <router-link class="text-lg mr-4" to="/work">
           work
         </router-link>
-        <router-link to="/about">
+        <router-link class="text-lg mr-4" to="/about">
           about
         </router-link>
-        <router-link to="/contact">
+        <router-link class="text-lg mr-4" to="/contact">
           contact
         </router-link>
       </nav>
@@ -32,16 +32,8 @@ h1 {
   animation-fill-mode: forwards;
 }
 
-.header {
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center;
-}
-
 nav a {
-  font-size: 120%;
-  margin-right: 1em;
+ /* font-size: 120%; */
   font-weight: 300;
 }
 
