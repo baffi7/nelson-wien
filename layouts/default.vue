@@ -26,7 +26,8 @@
 <style>
 h1 {
   color: #2647D7;
-  font-size: 80px;
+  font-size: 100px;
+  margin-top: -0.5em;
 
   animation: title-animation 1s ease-in-out;
   animation-fill-mode: forwards;
