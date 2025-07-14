@@ -15,11 +15,11 @@
       >Can-Tini</router-link>
     </div>
 
-    <div class="cube"/>
+    <div class="cube" />
 
-    <div class="cube"/>
+    <div class="cube" />
 
-    <div class="cube"/>
+    <div class="cube" />
   </div>
 </template>
 
