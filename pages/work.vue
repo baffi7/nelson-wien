@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const {
-  data: previews
+  data: previews,
 } = await useAsyncData(
   'page',
   () => queryCollection('page').all(),
@@ -9,20 +9,20 @@ const {
 
 <template>
   <div class="cubes flex flex-wrap">
-      <div v-for="preview in previews" :key="preview.id" class="card">
-        <pre>a{{ preview.preview_image }}</pre>
-      </div>
-
     <div
+      v-for="preview in previews"
+      :key="preview.id"
       class="cube"
       :style="{
-        backgroundImage: 'url(/images/cantini.png)',
+        backgroundImage: 'url(' + preview.preview_image + ')',
       }"
     >
-      <router-link
+      <NuxtLink
         class="text-white font-light text-3xl"
-        to="work/cantini"
-      >Can-Tini</router-link>
+        :to="'/work/' + preview.slug"
+      >
+        {{ preview.title }}
+      </NuxtLink>
     </div>
 
     <div class="cube" />

@@ -7,13 +7,22 @@
       </h1>
 
       <nav>
-        <router-link class="text-lg mr-4" to="/work">
+        <router-link
+          class="text-lg mr-4"
+          to="/work"
+        >
           work
         </router-link>
-        <router-link class="text-lg mr-4" to="/about">
+        <router-link
+          class="text-lg mr-4"
+          to="/about"
+        >
           about
         </router-link>
-        <router-link class="text-lg mr-4" to="/contact">
+        <router-link
+          class="text-lg mr-4"
+          to="/contact"
+        >
           contact
         </router-link>
       </nav>

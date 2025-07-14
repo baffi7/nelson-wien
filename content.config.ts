@@ -11,6 +11,6 @@ export default defineContentConfig({
         preview_image: z.string(),
         preview_alt: z.string(),
       }),
-    })
-  }
-});
+    }),
+  },
+})

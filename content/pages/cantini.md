@@ -2,7 +2,7 @@
 title: Title
 description: This is description
 
-preview_image: /assets/image/cantini.png
+preview_image: /images/cantini.png
 preview_alt: Article 1
 ---
 
