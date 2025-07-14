@@ -1,8 +1,18 @@
 <script setup lang="ts">
+const {
+  data: previews
+} = await useAsyncData(
+  'page',
+  () => queryCollection('page').all(),
+)
 </script>
 
 <template>
-  <div>
+  <div class="cubes flex flex-wrap">
+      <div v-for="preview in previews" :key="preview.id" class="card">
+        <pre>a{{ preview.preview_image }}</pre>
+      </div>
+
     <div
       class="cube"
       :style="{
@@ -15,11 +25,11 @@
       >Can-Tini</router-link>
     </div>
 
-    <div class="cube"/>
+    <div class="cube" />
 
-    <div class="cube"/>
+    <div class="cube" />
 
-    <div class="cube"/>
+    <div class="cube" />
   </div>
 </template>
 
@@ -29,7 +39,6 @@
   height: 422px;
   margin: 10px;
   padding: 10px;
-  float: left;
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease-in-out;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex flex-wrap items-center justify-between">
+    <header class="flex flex-wrap items-center justify-between">
       <h1>
         <span style="font-weight: 900;">nelson.</span>
         <span style="font-weight: 300;">wien</span>
@@ -17,13 +17,21 @@
           contact
         </router-link>
       </nav>
-    </div>
+    </header>
 
-    <slot />
+    <main>
+      <slot />
+    </main>
   </div>
 </template>
 
 <style>
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 h1 {
   color: #2647D7;
   font-size: 100px;
