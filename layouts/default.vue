@@ -7,24 +7,24 @@
       </h1>
 
       <nav>
-        <router-link
+        <NuxtLink
           class="text-lg mr-4"
           to="/work"
         >
           work
-        </router-link>
-        <router-link
+        </NuxtLink>
+        <NuxtLink
           class="text-lg mr-4"
           to="/about"
         >
           about
-        </router-link>
-        <router-link
+        </NuxtLink>
+        <NuxtLink
           class="text-lg mr-4"
           to="/contact"
         >
           contact
-        </router-link>
+        </NuxtLink>
       </nav>
     </header>
 
@@ -55,7 +55,7 @@ nav a {
   font-weight: 300;
 }
 
-nav a.router-link-active {
+nav a.NuxtLink-active {
   font-weight: 400;
 }
 

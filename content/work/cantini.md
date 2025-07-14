@@ -6,5 +6,5 @@ preview_image: /images/cantini.png
 preview_alt: Article 1
 ---
 
-![Kitties](images/kitties.svg)
+![Can-Tini](/images/cantini.png)
 

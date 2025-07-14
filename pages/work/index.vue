@@ -24,12 +24,6 @@ const {
         {{ preview.title }}
       </NuxtLink>
     </div>
-
-    <div class="cube" />
-
-    <div class="cube" />
-
-    <div class="cube" />
   </div>
 </template>
 
