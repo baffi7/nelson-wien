@@ -2,8 +2,8 @@
 const {
   data: previews,
 } = await useAsyncData(
-  'page',
-  () => queryCollection('page').all(),
+  'work',
+  () => queryCollection('work').all(),
 )
 </script>
 
@@ -19,7 +19,7 @@ const {
     >
       <NuxtLink
         class="text-white font-light text-3xl"
-        :to="'/work/' + preview.slug"
+        :to="preview.stem"
       >
         {{ preview.title }}
       </NuxtLink>

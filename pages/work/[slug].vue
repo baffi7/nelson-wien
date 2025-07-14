@@ -1,14 +1,26 @@
 <script setup lang="ts">
+const stem = computed(() => `work/${useRoute().params.slug}`)
+
 const {
-  data: previews,
+  data: work,
 } = await useAsyncData(
-  'page',
-  () => queryCollection('page').all(),
+  () => queryCollection('work')
+    .where(
+      'stem',
+      '==',
+      stem.value,
+    ).first(),
 )
+
+useSeoMeta({
+  title: work.value?.title,
+  description: work.value?.description,
+})
 </script>
 
 <template>
-  <div class="cubes flex flex-wrap">
-    JOOO
-  </div>
+  <ContentRenderer
+    v-if="work"
+    :value="work"
+  />
 </template>
