@@ -1,10 +1,7 @@
 <template>
   <div>
     <header class="flex flex-wrap items-center justify-between">
-      <h1>
-        <span style="font-weight: 900;">nelson.</span>
-        <span style="font-weight: 300;">wien</span>
-      </h1>
+      <HeaderLogo />
 
       <nav>
         <NuxtLink
@@ -38,15 +35,9 @@
 header {
   position: sticky;
   top: 0;
-}
-
-h1 {
-  color: #2647D7;
-  font-size: 100px;
-  margin-top: -0.5em;
-
-  animation: title-animation 1s ease-in-out;
-  animation-fill-mode: forwards;
+  z-index: 1;
+  filter: invert(100%);
+  mix-blend-mode: difference;
 }
 
 nav a {
@@ -56,18 +47,5 @@ nav a {
 
 nav a.NuxtLink-active {
   font-weight: 400;
-}
-
-@keyframes title-animation {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-    letter-spacing: -0.15em;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-    letter-spacing: -0.05em;
-  }
 }
 </style>

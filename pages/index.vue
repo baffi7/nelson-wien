@@ -2,7 +2,7 @@
 const {
   data: home,
 } = await useAsyncData(
-  () => queryCollection('content').path('/').first(),
+  () => queryCollection('home').path('/').first(),
 )
 
 useSeoMeta({
