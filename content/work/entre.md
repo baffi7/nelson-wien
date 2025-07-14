@@ -1,5 +1,5 @@
 ---
-title: Title
+title: Entre
 description: This is description
 
 preview_image: images/entre.jpg

@@ -1,5 +1,5 @@
 ---
-title: Title
+title: Can-Tini
 description: This is description
 
 preview_image: /images/cantini.jpg
