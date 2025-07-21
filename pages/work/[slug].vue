@@ -16,6 +16,16 @@ useSeoMeta({
   title: work.value?.title,
   description: work.value?.description,
 })
+
+onMounted(() => {
+  if (work.value.color) {
+    document.documentElement.style.setProperty('--color-primary', work.value.color)
+  }
+})
+
+onUnmounted(() => {
+  document.documentElement.style.removeProperty('--color-primary')
+})
 </script>
 
 <template>

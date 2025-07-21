@@ -7,9 +7,11 @@
 
 <style>
 h1 {
-  color: #2647D7;
+  color: var(--color-primary, #2647D7);
   font-size: 100px;
   margin-top: -0.5em;
+
+  transition: 200ms;
 
   animation: title-animation 1s ease-in-out;
   animation-fill-mode: forwards;

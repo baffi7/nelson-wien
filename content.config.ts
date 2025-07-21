@@ -16,6 +16,7 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string(),
         description: z.string(),
+        color: z.string(),
         preview_image: z.string(),
         preview_alt: z.string(),
       }),
