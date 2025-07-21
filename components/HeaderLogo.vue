@@ -1,12 +1,12 @@
 <template>
-  <h1>
+  <div class="logo">
     <span style="font-weight: 900;">nelson.</span>
     <span style="font-weight: 300;">wien</span>
-  </h1>
+  </div>
 </template>
 
 <style>
-h1 {
+.logo {
   color: var(--color-primary, #2647D7);
   font-size: 100px;
   margin-top: -0.5em;
