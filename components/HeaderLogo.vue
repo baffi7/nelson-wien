@@ -7,7 +7,7 @@
 
 <style>
 .logo {
-  color: var(--color-primary, #2647D7);
+  color: var(--color-primary);
   font-size: 100px;
   margin-top: -0.5em;
 
