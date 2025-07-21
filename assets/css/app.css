@@ -2,3 +2,7 @@ html, body {
   font-family: 'Coolvetica'; /*, sans-serif; */
   font-weight: 500;
 }
+
+:root {
+  --primary: #2647D7;
+}

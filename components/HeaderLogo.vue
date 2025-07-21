@@ -7,12 +7,14 @@
 
 <style>
 h1 {
-  color: #2647D7;
+  color: var(--primary);
   font-size: 100px;
   margin-top: -0.5em;
 
   animation: title-animation 1s ease-in-out;
   animation-fill-mode: forwards;
+
+  transition: 200ms;
 }
 
 @keyframes title-animation {
