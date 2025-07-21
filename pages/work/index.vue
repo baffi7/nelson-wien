@@ -9,21 +9,21 @@ const {
 
 <template>
   <div class="cubes flex flex-wrap">
-    <div
+    <NuxtLink
       v-for="preview in previews"
       :key="preview.id"
+      :to="preview.stem"
       class="cube"
       :style="{
         backgroundImage: 'url(' + preview.preview_image + ')',
       }"
     >
-      <NuxtLink
+      <div
         class="text-white font-light text-3xl"
-        :to="preview.stem"
       >
         {{ preview.title }}
-      </NuxtLink>
-    </div>
+      </div>
+    </NuxtLink>
   </div>
 </template>
 

@@ -2,3 +2,11 @@ html, body {
   font-family: 'Coolvetica'; /*, sans-serif; */
   font-weight: 500;
 }
+
+nav a {
+  font-weight: 300;
+}
+
+nav a.router-link-active {
+  font-weight: 400;
+}
