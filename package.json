@@ -21,6 +21,7 @@
     "eslint": "^9.0.0",
     "nuxt": "^3.17.5",
     "sql.js": "^1.13.0",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5.6.3",
     "vue": "^3.5.16",
     "vue-router": "^4.5.1"

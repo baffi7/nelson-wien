@@ -1,15 +1,19 @@
 <template>
-  <div class="logo">
+  <NuxtLink
+    to="/"
+    class="logo"
+  >
     <span style="font-weight: 900;">nelson.</span>
     <span style="font-weight: 300;">wien</span>
-  </div>
+  </NuxtLink>
 </template>
 
 <style>
 .logo {
   color: var(--color-primary);
   font-size: 100px;
-  margin-top: -0.5em;
+  line-height: 1;
+  margin-top: -0.25em;
 
   transition: 200ms;
 
