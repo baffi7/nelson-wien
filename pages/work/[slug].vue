@@ -29,10 +29,25 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <ContentRenderer
-    v-if="work"
-    :value="work"
-  />
+  <div>
+    <div
+      class="absolute top-20 left-6 text-black max-w-sm p-4 bg-white space-y-4"
+    >
+      <h1 class="heading text-3xl font-regular text-gray-900">
+        {{ work?.heading }}
+      </h1>
+      <p class="text text-sm text-gray-800 leading-relaxed">
+        {{ work?.text }}
+      </p>
+      <div class="date text-xs text-gray-400">
+        {{ work?.date }}
+      </div>
+    </div>
+    <ContentRenderer
+      v-if="work"
+      :value="work"
+    />
+  </div>
 </template>
 
 <style>
