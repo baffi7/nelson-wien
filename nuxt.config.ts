@@ -18,5 +18,11 @@ export default defineNuxtConfig({
     '@/assets/css/fonts.css',
   ],
 
+  content: {
+    database: {
+      driver: 'memory',
+    },
+  },
+
   compatibilityDate: '2025-05-15',
 })
