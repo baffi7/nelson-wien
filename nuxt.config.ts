@@ -18,14 +18,8 @@ export default defineNuxtConfig({
     '@/assets/css/fonts.css',
   ],
 
-  content: {
-    documentDriven: true,
-    highlight: {
-      theme: 'github-dark',
-    },
-    database: {
-      driver: 'sqljs',
-    },
+  experimental: {
+    sqliteConnector: 'native',
   },
 
   compatibilityDate: '2025-05-15',
