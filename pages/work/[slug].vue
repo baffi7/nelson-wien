@@ -45,14 +45,8 @@ onUnmounted(() => {
     </div>
     <ContentRenderer
       v-if="work"
+      class="content-work"
       :value="work"
     />
   </div>
 </template>
-
-<style>
-main img {
-  max-width: 80vw;
-  margin-left: auto;
-}
-</style>

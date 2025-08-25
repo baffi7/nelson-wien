@@ -19,3 +19,8 @@ nav a {
 nav a.router-link-active {
   font-weight: 400;
 }
+
+main .content-work img {
+  max-width: 80vw;
+  margin-left: auto;
+}
