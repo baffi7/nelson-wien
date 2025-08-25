@@ -3,7 +3,7 @@ title: Can-Tini
 description: This is description
 color: "#204743"
 
-preview_image: /images/cantini.jpg
+preview_image: https://ik.imagekit.io/brotwurst/images/cantini.jpg?updatedAt=1756118230148
 preview_alt: Article 1
 
 heading: Can-Tini
@@ -11,6 +11,6 @@ text: "Knowing we wanted to pursue a retro-futuristic direction, we started our 
 date: May 23 2025
 ---
 
-![Can-Tini](/images/cantini.jpg)
+![Can-Tini](https://ik.imagekit.io/brotwurst/images/cantini.jpg?updatedAt=1756118230148)
 
-![Can-Tini](/images/cantini-coffee.jpg)
+![Can-Tini](https://ik.imagekit.io/brotwurst/images/cantini-coffee.jpg?updatedAt=1756118230148)
